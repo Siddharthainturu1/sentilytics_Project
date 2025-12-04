@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "paths": {
+    "/analyze": {
+      "name": "/analyze",
+      "lambdaFunction": "sentilyticsFunction",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read"
+        ]
+      }
+    }
+  }
+}

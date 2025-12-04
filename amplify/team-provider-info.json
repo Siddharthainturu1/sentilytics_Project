@@ -1,0 +1,30 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-sentilytics-dev-706ee-authRole",
+      "UnauthRoleArn": "arn:aws:iam::945714903250:role/amplify-sentilytics-dev-706ee-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::945714903250:role/amplify-sentilytics-dev-706ee-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-sentilytics-dev-706ee-deployment",
+      "UnauthRoleName": "amplify-sentilytics-dev-706ee-unauthRole",
+      "StackName": "amplify-sentilytics-dev-706ee",
+      "StackId": "arn:aws:cloudformation:us-east-1:945714903250:stack/amplify-sentilytics-dev-706ee/7f07b790-c826-11f0-9f32-0affebf2a6df",
+      "AmplifyAppId": "d1imdptsty4ttj",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-sentilytics-dev-706ee-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "sentilyticsd0ef0687": {}
+      },
+      "function": {
+        "sentilyticsFunction": {
+          "deploymentBucketName": "amplify-sentilytics-dev-706ee-deployment",
+          "s3Key": "amplify-builds/sentilyticsFunction-6158484c61576f345445-build.zip"
+        }
+      },
+      "api": {
+        "sentilyticsAPI": {}
+      }
+    }
+  }
+}

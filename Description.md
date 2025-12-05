@@ -9,7 +9,7 @@ Sentilytics is a cloud-native AI application that enables users to perform real-
 
 ### **Performance and Functionality**
 
-#### **✅ What Worked Well**
+#### ** What Worked Well**
 
 * **End-to-End Sentiment Processing Pipeline:**
     * API requests via **Amazon API Gateway** are fast, secure, and fully decoupled from the frontend.

@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ Prerequisites
+##  Prerequisites
 
 Ensure you have the following installed before starting:
 * **Node.js** (v14 or above)
@@ -15,7 +15,7 @@ Ensure you have the following installed before starting:
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 [cite_start]Clone the project code to your local machine. [cite: 72]
@@ -55,7 +55,7 @@ npm start
 
 This will open the app at http://localhost:3000.
 
-## 📂 Key Notes
+##  Key Notes
 
 >**AWS Region:** Ensure your CLI is configured for a region that supports Amazon Comprehend (e.g., `us-east-1` or `ap-south-1`). 
 >**IAM Permissions:** The Lambda execution role created by Amplify must have `ComprehendReadOnly` permissions attached via the AWS Console.
@@ -68,14 +68,14 @@ This will open the app at http://localhost:3000.
 
 Since Sentilytics uses **Infrastructure-as-Code (IaC)** via Amplify, you do not manually set `.env` strings. [cite_start]Instead, the `amplify push` command configures the following services for you. [cite: 95-96]
 
-### 🔐 1. Amazon Cognito (Authentication)
+###  1. Amazon Cognito (Authentication)
 * **Configured in:** `amplify/backend/auth` 
 * **Purpose:** Enables secure user sign-up, sign-in, and session management. 
 * **Instructions:**
     * Managed automatically via Amplify.
     * To view users, go to **AWS Console > Cognito > User Pools**. 
 
-### ⚡ 2. AWS Lambda (Backend Logic)
+###  2. AWS Lambda (Backend Logic)
 * **Configured in:** `amplify/backend/function/sentilyticsFunction` 
 * **Purpose:** Serverless Python function that receives text from the frontend, validates it, and sends it to the AI layer.
 * **Instructions:**
@@ -86,20 +86,20 @@ Since Sentilytics uses **Infrastructure-as-Code (IaC)** via Amplify, you do not 
       ```
       
 
-### 🧠 3. Amazon Comprehend (AI & NLP)
+###  3. Amazon Comprehend (AI & NLP)
 * **Configured in:** AWS Cloud (Service) 
 * **Purpose:** The core AI engine that performs Natural Language Processing to detect sentiment (**Positive**, **Negative**, **Neutral**, **Mixed**).
 * **Instructions:**
     * No API key is needed in the code; authentication is handled via IAM Roles attached to the Lambda function. 
     * [cite_start]Ensure your AWS account has passed verification to access AI services. 
 
-### 🌐 4. Amazon API Gateway (REST API)
+###  4. Amazon API Gateway (REST API)
 * **Configured in:** `amplify/backend/api/sentilyticsAPI` 
 * **Purpose:** Exposes a secure REST endpoint (`/analyze`) that the React frontend connects to. 
 * **Instructions:**
     * The API URL is automatically injected into `aws-exports.js` during the build process.
 
-### 🖥 5. Frontend Hosting (AWS Amplify)
+###  5. Frontend Hosting (AWS Amplify)
 * **Configured in:** AWS Console 
 * **Purpose:** Hosts the React application globally with CI/CD support.
 * **Instructions:**

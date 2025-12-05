@@ -1,6 +1,6 @@
 # Sentilytics Project Description
 
-**🔗 Live Project:** [Insert Your Amplify Link Here]
+**🔗 Live Project:** 
 
 ### Project Description: Sentilytics
 Sentilytics is a cloud-native AI application that enables users to perform real-time sentiment analysis on text input. It streamlines emotional data processing by converting raw text into sentiment scores and confidence metrics using Amazon Comprehend (NLP). The system is built with scalability, cost-efficiency, and developer ergonomics in mind, using a fully serverless architecture on AWS.
